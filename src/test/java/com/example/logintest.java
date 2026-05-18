@@ -24,7 +24,6 @@ public class logintest {
 	options.addArguments("--no-sandbox");
 	options.addArguments("--disable-dev-shm-usage");
 
-WebDriver driver = new ChromeDriver(options);
 
         // Open browser
         WebDriver driver = new ChromeDriver(options);
