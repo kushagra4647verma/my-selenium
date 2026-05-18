@@ -19,6 +19,12 @@ public class logintest {
 
         // IMPORTANT for Chromium
         options.setBinary("/usr/bin/chromium-browser");
+        
+        options.addArguments("--headless");
+	options.addArguments("--no-sandbox");
+	options.addArguments("--disable-dev-shm-usage");
+
+WebDriver driver = new ChromeDriver(options);
 
         // Open browser
         WebDriver driver = new ChromeDriver(options);
